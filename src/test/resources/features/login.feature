@@ -27,21 +27,21 @@ Feature:LoginToSite
       | blank             | blank            |
 
   @TC04
-  Scenario : TC04_Verify error message should get displayed for blank user name and password
+  Scenario: TC04_Verify error message should get displayed for blank user name and password
     Given user enter "blank" value in username
     And user enter "blank" value in password
     When user click on login button
     Then error message should get displayed for blank username
 
   @TC04
-  Scenario : TC04_Verify user should be able to login successfully
+  Scenario: TC04_Verify user should be able to login successfully
     Given user enter "valid" value in username
     And user enter "valid" value in password
     When user click on login button
     Then user should navigate to Swag Lab main page
 
   @TC04
-  Scenario : TC04_Verify user enter item in cart and checkout successfully
+  Scenario: TC04_Verify user enter item in cart and checkout successfully
     Given user login to swag lab
     And user add "Sauce Labs Bolt T-Shirt" in cart and proceed to checkout
     And user click on checkout
